@@ -4,20 +4,29 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+     
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+     
+     
+    <div className = "button-container" >
+      
+      
+
+    </div>
+    <div className='react-benefits-container'>
+      <h2> benefits of using react...</h2>
+      <ol>
+        <li>
+             Component based Architectural
+        </li>
+        <li> Rich ecosystem and community</li>
+        <li> Virtual DOM for Efficient updates</li>
+        <li> Cross platform developemnt </li>
+        <li> Strong community support</li>
+      </ol>
+    </div>
+    <button className='button' >Get Started</button>
     </div>
   );
 }
