@@ -17,7 +17,7 @@ function App() {
     <div className='react-benefits-container'>
       <h2> benefits of using react...</h2>
       <ol>
-        <li>
+  <li>
              Component based Architectural
         </li>
         <li> Rich ecosystem and community</li>
