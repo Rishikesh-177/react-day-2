@@ -2,12 +2,12 @@
 
 import React from 'react'
 
-const Button = () => {
+const MyButton = () => {
   return (
     <div>
-      <Button className= "myButton" > Get Started </Button>
+      <button className= "myButton" > Get Started </button>
     </div>
-  )
+  );
 }
 
-export default Button
+export default MyButton

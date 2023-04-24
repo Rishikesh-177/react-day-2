@@ -1,8 +1,9 @@
 
 import './App.css';
 import Benefits from './component/react-benefits/Benefits';
-import Button from './component/react-button/Button';
 import Logo from './component/react-logo/Logo';
+
+import MyButton from './component/react-button/Button';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         
         <Logo />
 <Benefits />
-       <Button />
+       <MyButton />
 
       </header>
     </div>

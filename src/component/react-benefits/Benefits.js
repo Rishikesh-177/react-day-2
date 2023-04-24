@@ -3,7 +3,7 @@ import React from 'react'
 const Benefits = () => {
   return (
     <div>
-      <h1> Benifits of using react .. </h1>
+      <h1> Benefits of using react .. </h1>
       <ol> 
        
        <li> Component-based architecture</li>  
