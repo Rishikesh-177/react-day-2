@@ -1,0 +1,54 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .hero-image {
+        min-width: 100%;
+    }
+
+    .hero-text {
+        padding: 20px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        }
+}
