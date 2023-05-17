@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+import Taskbar from './Taskbar/Taskbar';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes,  } from "react-router-dom";
+import { Projects }   from './Taskbar/Pages/Projects';
+import  { Videos } from './Taskbar/Pages/Videos';
+import { About } from './Taskbar/Pages/About';
+import { Home } from './Taskbar/Pages/Home';
+import { Login } from './Taskbar/Pages/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <Router>
+<Taskbar /> 
+<div className='pages'>
+<Routes>
+  <Route exact path='/' Taskbar={Home}/>
+  <Route exact path='/about' Taskbar={About}/>
+  <Route exact path='/Projects' Taskbar={Projects}/>
+  <Route exact path='/videos' Taskbar={Videos}/>
+  <Route exact path='/login' Taskbar={Login}/>
+  </Routes>
+
+</div>
+</Router>
+</>
+   
   );
 }
 
