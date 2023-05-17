@@ -28,8 +28,14 @@
     text-decoration: none;
     font-size: 2rem;
     flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
+.company-name {
+    margin-top: 10px;
+}
 .nav-menu {
     display: flex;
     list-style: none;
@@ -39,7 +45,7 @@
 }
 
 .nav-links {
-    color: aliceblue;
+    color: rgb(31, 86, 134);
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100px;
@@ -93,9 +99,10 @@
         left: -110px;
         opacity: 1;
         transition: all 0.5s ease;
+        padding: 2rem;
     }
 
-    .nav-menu .active {
+    .nav-menu.active {
         background: #1f5156;
         left: 0px;
         opacity: 1;
