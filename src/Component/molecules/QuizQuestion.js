@@ -6,20 +6,19 @@ const QuizQuestion = ({ question, options, selectOption, onOptionSelect }) => (
 <p>{question}</p>
 <h2>Options:</h2>
 {options.map(option => (
-    <label key={option}>
+    <label key={option.value}>
         <input
         type='radio'
         name='option'
-        value={option}
-        checked={selectOption === option}
-        onChange={() => onOptionSelect(option)}
+        value={option.value}
+        checked={selectOption === option.value}
+        onChange={() => onOptionSelect(option.value)}
         />
-        {option}
+        {option.label}
     </label>
     ))}
 </div>
 );
   
 
-export default QuizQuestion
-{ question, options, selectOption, onOptionSelect }
+export default QuizQuestion;

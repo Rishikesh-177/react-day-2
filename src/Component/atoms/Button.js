@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-const Button = ({ onCkick, text }) => (
-  <button onCkick={onCkick} > {text}</button>
-  )
+const Button = ({ onClick, text }) => (
+  <button onClick={onClick}>{text}</button>
+  );
 
 export default Button;
+
